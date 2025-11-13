@@ -1,6 +1,6 @@
 # Application AR pour la Formation Médicale (Projet MV50)
 
-> Projet de fin d'études du Master Ingénieur Informatique (UTBM), spécialisation Mondes Virtuels (MV50). Cette application de Réalité Augmentée (AR) pour la formation médicale a été développée en collaboration avec l'Hôpital de Belfort et a obtenu la note maximale (A+) lors du jury.
+> Projet de fin d'études du Master Ingénieur Informatique (UTBM), spécialisation Mondes Virtuels (MV50). Cette application de Réalité Augmentée (AR) pour la formation médicale a été développée en collaboration avec l'Hôpital de Belfort et a obtenu la note maximale (A) lors du jury.
 
 [![Moteur](https://img.shields.io/badge/Moteur-Unreal_Engine-black.svg)](https://www.unrealengine.com/)
 [![Plateforme](https://img.shields.io/badge/Plateforme-Meta_Quest_3-blue.svg)](https://www.meta.com/quest/quest-3/)
