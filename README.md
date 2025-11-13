@@ -1,74 +1,75 @@
-# Application AR pour la Formation Médicale (Projet MV50)
+# Medical AR: Immersive Clinical Symptom Training (MV50 Project)
 
-> Projet de fin d'études du Master Ingénieur Informatique (UTBM), spécialisation Mondes Virtuels (MV50). Cette application de Réalité Augmentée (AR) pour la formation médicale a été développée en collaboration avec l'Hôpital de Belfort et a obtenu la note maximale (A) lors du jury.
+> This repository contains the final-year project for my Computer Science Engineering Master's Degree at UTBM (specialization in Virtual Worlds, MV50). This Augmented Reality (AR) application for medical training was developed in collaboration with the Belfort Hospital and was awarded the **highest possible mark (A)** by the jury.
 
-[![Moteur](https://img.shields.io/badge/Moteur-Unreal_Engine-black.svg)](https://www.unrealengine.com/)
-[![Plateforme](https://img.shields.io/badge/Plateforme-Meta_Quest_3-blue.svg)](https://www.meta.com/quest/quest-3/)
-[![Outils](https://img.shields.io/badge/Outils-Blender-orange.svg)](https://www.blender.org/)
+[![Engine](https://img.shields.io/badge/Engine-Unreal_Engine-black.svg)](https://www.unrealengine.com/)
+[![Platform](https://img.shields.io/badge/Platform-Meta_Quest_3-blue.svg)](https://www.meta.com/quest/quest-3/)
+[![Framework](https://img.shields.io/badge/Framework-Meta_XR-blueviolet.svg)](https://developer.oculus.com/)
+[![Tools](https://img.shields.io/badge/Tools-Blender-orange.svg)](https://www.blender.org/)
 [![Scripting](https://img.shields.io/badge/Scripting-Blueprints-blue.svg)](https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html)
 
 ---
 
-## 🎯 Contexte et Objectif
+## 🎯 Project Overview & Context
 
-Ce projet a débuté comme une simulation en **Réalité Virtuelle (VR)** pour l'apprentissage de la prise de sang.
+This project initially began as a **Virtual Reality (VR)** simulation for practicing blood draw procedures.
 
-Après une rencontre décisive avec le **Dr Laurent Faivre**, Chef du service réanimation de l'Hôpital de Belfort, le projet a pivoté vers une application de **Réalité Augmentée (AR)** répondant à un besoin plus concret.
+Following a decisive meeting with **Dr. Laurent Faivre**, head of the intensive care unit at Belfort Hospital, the project was strategically pivoted to **Augmented Reality (AR)** to address a more pressing and practical need.
 
-L'objectif final est de permettre au personnel médical de s'entraîner à la **reconnaissance visuelle de symptômes cliniques** (pathologies) directement sur un mannequin virtuel superposé au monde réel.
+The final application is an AR training tool that allows medical students and staff to practice the **visual recognition of clinical symptoms**. It works by superimposing a realistic, interactive virtual mannequin onto the user's real-world environment, which can then display various pathologies.
 
-## 🎥 Démonstration Vidéo
+## 🎥 Video Demonstration
 
-Une vidéo complète présentant les fonctionnalités de l'application (sur Meta Quest 3) est disponible sur Google Drive.
+A full video demonstrating the application's features running on a Meta Quest 3 (using pass-through) is available on Google Drive.
 
-**[➡️ Regarder la vidéo du projet ici](https://drive.google.com/file/d/178HY_PfaL4dJqKItYMrfNSf1Q0En1jRS/view?usp=sharing)**
-
----
-
-## ✨ Fonctionnalités Principales
-
-Le prototype fonctionnel (MVP) développé permet les actions suivantes en Réalité Augmentée via le casque Meta Quest 3 :
-
-* **Affichage du Mannequin :** Fait apparaître un corps humain virtuel complet dans l'espace réel de l'utilisateur.
-* **Positionnement Manuel :** L'utilisateur peut "attraper" (gâchette gauche) et "relâcher" (gâchette droite) le mannequin pour le positionner librement dans la pièce.
-* **Changement de Symptômes :** L'utilisateur peut appliquer instantanément différentes textures pathologiques sur le corps à l'aide des manettes :
-    * **Bouton X :** Applique la texture "Cyanose".
-    * **Bouton Y :** Applique la texture "Marbrures".
-    * **Bouton A :** Applique la texture "Prurit".
-    * **Grip Droit :** Applique la texture "Choc allergique" (plaques rouges).
-    * **Bouton B :** Réinitialise le mannequin à son état normal.
+**[➡️ Watch the Project Video Here](https://drive.google.com/file/d/178HY_PfaL4dJqKItYMrfNSf1Q0En1jRS/view?usp=sharing)**
 
 ---
 
-## 🛠️ Stack Technique
+## ✨ Core Features (MVP)
 
-* **Moteur de Jeu :** **Unreal Engine** (choisi pour sa qualité graphique et sur conseil de l'encadrant).
-* **Framework RA :** **Meta XR** (pour le "pass-through" et l'ancrage spatial sur Meta Quest 3).
-* **Scripting :** **Blueprints** (pour gérer les interactions, les changements d'état et le système de "grab").
-* **Modélisation 3D :** **Blender** (utilisé pour l'UV mapping du corps humain et la création des masques de texture en "Texture Paint").
+The functional prototype allows the following actions within the AR environment:
 
----
-
-## 🚀 Tester l'Application (APK Android)
-
-Bien que le projet ait été principalement développé pour le Meta Quest 3, une version multi-support (smartphone) a également été implémentée.
-
-Vous pouvez tester la version Android en installant l'APK suivant :
-
-1.  **[Télécharger le fichier APK ici](https://drive.google.com/file/d/1Tn-LowIA2MuJt6Ao4O_JkbRrAu9NGLmW/view?usp=sharing)**
-2.  Autorisez votre appareil à **"Installer des applications de sources inconnues"** dans vos paramètres de sécurité.
-3.  Ouvrez le fichier `.apk` téléchargé pour installer l'application.
-4.  Lancez l'application et accordez les autorisations de caméra.
+* **Virtual Mannequin:** Spawns a full-size virtual human body in the user's real space.
+* **Manual Positioning:** The user can grab (Left Trigger) and release (Right Trigger) the mannequin to freely position it in the room, making it adaptable to any training space.
+* **Dynamic Symptom Switching:** The user can instantly apply different pathological textures to the mannequin using the controller buttons:
+    * **'X' Button:** Applies **Cyanosis** texture.
+    * **'Y' Button:** Applies **Mottling (Marbrures)** texture.
+    * **'A' Button:** Applies **Pruritus (Prurit)** texture.
+    * **Right Grip:** Applies **Allergic Shock** (red patches) texture.
+    * **'B' Button:** Resets the mannequin to its normal, healthy state.
 
 ---
 
-## 👥 Auteurs et Encadrement
+## 🛠️ Tech Stack
 
-* **Étudiants :**
+* **Game Engine:** **Unreal Engine** (Chosen for high-fidelity graphics and on advisor's recommendation).
+* **AR Framework:** **Meta XR SDK** (To leverage the pass-through and spatial tracking capabilities of the Meta Quest 3).
+* **Scripting:** **Blueprints** (Used to manage all interactions, state changes, and the custom grabbable system).
+* **3D Assets:** **Blender** (Used for UV mapping the human model and creating the texture masks via "Texture Paint" to define where symptoms appear).
+
+---
+
+## 🚀 How to Test (Android APK)
+
+While the primary development target was the Meta Quest 3, a multi-platform version for Android smartphones was also implemented.
+
+You can test this version by sideloading the provided APK:
+
+1.  **[Download the .apk file here](https://drive.google.com/file/d/1Tn-LowIA2MuJt6Ao4O_JkbRrAu9NGLmW/view?usp=sharing)**
+2.  Enable **"Install from unknown sources"** in your phone's security settings.
+3.  Open the downloaded `.apk` file to install the application.
+4.  Launch the app and grant camera permissions to enable the AR experience.
+
+---
+
+## 👥 Authors & Acknowledgements
+
+* **Student Developers:**
     * Victor PIANA
     * Cyprien JURY
     * Maxime KYRIAKIDES
-* **Encadrant Universitaire (UTBM) :**
+* **University Advisor (UTBM):**
     * Fabrice Lauri
-* **Encadrant Professionnel (Hôpital) :**
-    * Dr Laurent FAIVRE (Chef du service réanimation, Hôpital de Belfort)
+* **Professional Advisor (Hospital):**
+    * Dr. Laurent FAIVRE (Head of Intensive Care, Belfort Hospital)
